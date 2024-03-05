@@ -16,6 +16,6 @@ dividing_by_banks_pattern = re.compile(
 bank_pattern = re.compile(r"^\d{4}\s([A-Z].*?S\..*?)\n", flags=re.MULTILINE)
 # operation_pattern: It allows to get all the data of the operation except Solidario / Colectivo
 operation_pattern = re.compile(
-    r"^(.*)(V\d{2})\s(T\d{2})(?:\sT\d{2})?\s([A-Z]{3})(\sL\d{2})?(\sG\d{2})?(\sG\d{2})?\s([\d\.]+)\s([\d\.]+)\s([\d\.]+)\s([\d\.]+)",
+    r"^(.*)(V\d{2})\s(T\d{2})(?:\sT\d{2})?\s([A-Z]{3})(\sL\d{2})?(\sG\d{2})?(\sG\d{2})?(?:\sI\d{2})?\s([\d\.]+)\s([\d\.]+)\s([\d\.]+)\s([\d\.]+)",
     flags=re.MULTILINE,
 )
